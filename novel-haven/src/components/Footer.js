@@ -1,9 +1,9 @@
-import "../css/Header.css";
+import "../css/Footer.css";
 
 const Footer = () => {
     return (
-        <footer>
-            <p>@sophielingle</p>
+        <footer id="main-footer">
+            <p>&copy; NovelHaven</p>
         </footer>
     );
 };

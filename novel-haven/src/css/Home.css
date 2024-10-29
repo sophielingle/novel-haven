@@ -1,0 +1,73 @@
+/* Structure */
+#main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.home-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+#home-content {
+    padding: 10px;
+    margin: 10px;
+    line-height: 22px;
+}
+
+.best-seller h2, h3, p, a{
+    line-height: 22px;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Media Queries */
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    #content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #main-img {
+        width: 1000px;
+        height: 200px;
+    }
+
+    .home-img {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    
+    .hidden-small {
+        display: flex;
+    }
+}

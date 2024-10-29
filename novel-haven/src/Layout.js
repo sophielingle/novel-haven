@@ -1,22 +1,27 @@
 import {Outlet, Link} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
+import "./css/Layout.css";
 
 const Layout = () => {
     return (
         <>
             <Header />
 
-            <Link to="/">Home</Link>
-            <Link to="/TopGenres">Top Genres</Link>
-            <Link to="/BestSellers">Best Sellers</Link>
-            <Link to="/Order">Order</Link>
-            <Link to="/admin">Admin</Link>
-            <Link to="/contact">Contact Us</Link>
-
-
-
+            <div id="content">
+                <section id="nav-bar">
+                    <nav id="main-nav">
+                        <ul id="nav-items" className="columns hidden-small">
+                            <li><Link to="/">HOME</Link></li>
+                            <li><Link to="/topgenres">TOP GENRES</Link></li>
+                            <li><Link to="/bestsellers">BEST SELLERS</Link></li>
+                            <li><Link to="/order">ORDER</Link></li>
+                            <li><Link to="/admin">ADMIN</Link></li>
+                            <li><Link to="/contact">CONTACT US</Link></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
 
             <Outlet />
 

@@ -1,14 +1,17 @@
-#heading {
-    color: var(--text-color);
-    width: 100%;
-    padding: 10px;
-    margin: auto;
+/* Srtucture */
+.center-form {
+    text-align: center;
 }
 
-#heading h1 {
-    padding-left: 10px;
+#form-content {
+    background: var(--div-background);
+    border: solid var(--text-color);
+    border-radius: 10px;
 }
 
+#form-content h1 {
+    font-size: 32px;
+}
 
 /* Media Queries */
 /* Apply to 600px and larger */
@@ -37,5 +40,9 @@
 
     .four {
         flex: 4;
+    }
+
+    .hidden-small {
+        display: flex;
     }
 }

@@ -9,8 +9,11 @@ import Admin from "./pages/Admin";
 import TopGenres from "./pages/TopGenres";
 import BestSellers from "./pages/BestSellers";
 import Order from "./pages/Order";
-
-
+import Horror from "./genres/Horror";
+import Mystery from "./genres/Mystery";
+import Romance from "./genres/Romance";
+import Drama from "./genres/Drama";
+import Book1 from "./books/Book1";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -25,7 +28,11 @@ const App = () => {
           <Route path="topgenres" element={(<TopGenres />)} />
           <Route path="bestsellers" element={(<BestSellers />)} />
           <Route path="order" element={(<Order />)} />
-
+          <Route path="/horror" element={<Horror />} />
+          <Route path="/mystery" element={<Mystery />} />
+          <Route path="/drama" element={<Drama />} />
+          <Route path="/romance" element={<Romance />} />
+          <Route path="/book1" element={<Book1 />} />
         </Route>
       </Routes>
     </BrowserRouter>

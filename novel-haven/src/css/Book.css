@@ -1,0 +1,76 @@
+/* Structure */
+.center {
+    text-align: center;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.book-img {
+    padding: 0px;
+}
+
+/* Media Queries */
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    #content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #main-nav li {
+        flex: 0;
+    }
+
+    #nav-bar {
+        background: var(--main-background-color);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    #main-img {
+        width: 1000px;
+        height: 200px;
+    }
+
+    .home-img {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+    .contact-img {
+        width: auto;
+        height: auto;
+    }
+
+    #toggle-nav {
+        display: none;
+    }
+    
+    .hidden-small {
+        display: flex;
+    }
+}

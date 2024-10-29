@@ -1,0 +1,77 @@
+/* Structure */
+#genre-page h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+
+.genre-content {
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.genre-content p, h2 {
+    padding-left: 10px;
+}
+
+.genre {
+    margin: auto;
+    text-align: center;
+}
+
+.genre-single {
+    border: solid var(--secondary-background) 4px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--div-background);
+    max-height: 450px;
+    max-width: 550px;
+
+}
+
+.best-seller h2, h3, p, a{
+    line-height: 22px;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Media Queries */
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    #content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    .contact-img {
+        width: auto;
+        height: auto;
+    }
+
+    .hidden-small {
+        display: flex;
+    }
+}

@@ -1,0 +1,61 @@
+/* Structure */
+.center {
+    text-align: center;
+    font-size: 32px;
+}
+
+.best-seller {
+    background: var(--div-background);
+    border: solid var(--secondary-background);
+    border-radius: 10px;
+    margin: 0px;
+    padding: 20px;
+}
+
+.best-seller img {
+    max-width: 100px;
+    max-height: 150px;
+    margin: auto;
+    border: solid var(--nav-text) 3px;
+}
+
+.best-seller h2, h3, p, a{
+    line-height: 22px;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Media Queries */
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    #content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    .hidden-small {
+        display: flex;
+    }
+}
