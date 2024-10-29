@@ -1,0 +1,16 @@
+:root {
+  --main-background-color: #c1d0b5;
+  --secondary-background: #99a98f;
+  --div-background: #dce3c7;
+  --text-color: #4D5D53;
+  --nav-text: #fff8de;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--main-background-color);
+  color: var(--text-color);
+}
