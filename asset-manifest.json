@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/novel-haven/novel-haven/static/css/main.8b745319.css",
+    "main.js": "/novel-haven/novel-haven/static/js/main.36e90c73.js",
+    "index.html": "/novel-haven/novel-haven/index.html",
+    "main.8b745319.css.map": "/novel-haven/novel-haven/static/css/main.8b745319.css.map",
+    "main.36e90c73.js.map": "/novel-haven/novel-haven/static/js/main.36e90c73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b745319.css",
+    "static/js/main.36e90c73.js"
+  ]
+}
