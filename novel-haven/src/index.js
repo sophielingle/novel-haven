@@ -9,11 +9,11 @@ import Admin from "./pages/Admin";
 import TopGenres from "./pages/TopGenres";
 import BestSellers from "./pages/BestSellers";
 import Order from "./pages/Order";
-import Horror from "./genres/Horror";
-import Mystery from "./genres/Mystery";
-import Romance from "./genres/Romance";
-import Drama from "./genres/Drama";
-import Book1 from "./books/Book1";
+import Horror from "./genre-pages/Horror";
+import Mystery from "./genre-pages/Mystery";
+import Romance from "./genre-pages/Romance";
+import Drama from "./genre-pages/Drama";
+import Book1 from "./book-pages/Book1";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
