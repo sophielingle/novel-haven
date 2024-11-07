@@ -1,10 +1,21 @@
 /* Navigation */
+#nav-items {
+    display: none; /* Hide the navigation items by default on small screens */
+    list-style: none;
+    padding: 0;
+}
+
+#nav-items.open {
+    display: block; /* Show the navigation items when the "open" class is added */
+}
+
+/* Hamburger Menu */
 #toggle-nav div {
     width: 25px;
     height: 2px;
     background-color: var(--main-background-color);
     margin: 6px 0;
-  }
+}
 
 #nav-bar {
     background: var(--secondary-background);
@@ -14,18 +25,18 @@
 
 #main-nav ul {
     margin: auto;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 #main-nav li {
-    list-style-type: none; /*no bullets*/
+    list-style-type: none; /* No bullets */
     padding: 10px;
     margin: auto;
 }
 
 #main-nav a {
-    text-decoration: none; /*no underline*/
+    text-decoration: none; /* No underline */
     background: var(--secondary-background);
     color: var(--nav-text);
     margin: 0px;
@@ -79,11 +90,12 @@
         justify-content: center;
     }
 
-    #toggle-nav {
-        display: none;
-    }
-    
-    .hidden-small {
+    /* On larger screens, always show the nav items */
+    #nav-items {
         display: flex;
+    }
+
+    #toggle-nav {
+        display: none; /* Hide the toggle button on larger screens */
     }
 }

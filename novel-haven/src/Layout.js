@@ -1,9 +1,16 @@
-import {Outlet, Link} from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
+import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./css/Layout.css";
 
 const Layout = () => {
+    const [navOpen, setNavOpen] = useState(false);
+
+    const toggleNav = () => {
+        setNavOpen(prevState => !prevState);
+    };
+
     return (
         <>
             <Header />
@@ -11,12 +18,15 @@ const Layout = () => {
             <div id="content">
                 <section id="nav-bar">
                     <nav id="main-nav">
-                        <div id="toggle-nav">
+                        <div id="toggle-nav" onClick={toggleNav}>
                             <div></div>
                             <div></div>
                             <div></div>
                         </div>
-                        <ul id="nav-items" className="columns hidden-small">
+                        <ul
+                            id="nav-items"
+                            className={`columns ${navOpen ? 'open' : ''}`}
+                        >
                             <li><Link to="/">HOME</Link></li>
                             <li><Link to="/topgenres">TOP GENRES</Link></li>
                             <li><Link to="/bestsellers">BEST SELLERS</Link></li>
