@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/novel-haven/static/css/main.8b745319.css",
-    "main.js": "/novel-haven/static/js/main.32ceb1a3.js",
+    "main.css": "/novel-haven/static/css/main.d3f92f9d.css",
+    "main.js": "/novel-haven/static/js/main.0f65f2f0.js",
     "index.html": "/novel-haven/index.html",
-    "main.8b745319.css.map": "/novel-haven/static/css/main.8b745319.css.map",
-    "main.32ceb1a3.js.map": "/novel-haven/static/js/main.32ceb1a3.js.map"
+    "main.d3f92f9d.css.map": "/novel-haven/static/css/main.d3f92f9d.css.map",
+    "main.0f65f2f0.js.map": "/novel-haven/static/js/main.0f65f2f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b745319.css",
-    "static/js/main.32ceb1a3.js"
+    "static/css/main.d3f92f9d.css",
+    "static/js/main.0f65f2f0.js"
   ]
 }
