@@ -1,15 +1,14 @@
 /* Navigation */
 #nav-items {
-    display: none; /* Hide the navigation items by default on small screens */
+    display: none; 
     list-style: none;
     padding: 0;
 }
 
 #nav-items.open {
-    display: block; /* Show the navigation items when the "open" class is added */
+    display: block; 
 }
 
-/* Hamburger Menu */
 #toggle-nav div {
     width: 25px;
     height: 2px;
@@ -90,12 +89,11 @@
         justify-content: center;
     }
 
-    /* On larger screens, always show the nav items */
     #nav-items {
         display: flex;
     }
 
     #toggle-nav {
-        display: none; /* Hide the toggle button on larger screens */
+        display: none; 
     }
 }
