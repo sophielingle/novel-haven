@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, useParams} from "react-router-dom";
 import './css/index.css';
 import Layout from "./Layout";
 import Home from "./pages/Home";
@@ -13,7 +13,7 @@ import Horror from "./genre-pages/Horror";
 import Mystery from "./genre-pages/Mystery";
 import Romance from "./genre-pages/Romance";
 import Drama from "./genre-pages/Drama";
-import Book1 from "./book-pages/Book1";
+import FullBooks from "./components/FullBooks.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -32,11 +32,16 @@ const App = () => {
           <Route path="/mystery" element={<Mystery />} />
           <Route path="/drama" element={<Drama />} />
           <Route path="/romance" element={<Romance />} />
-          <Route path="/book1" element={<Book1 />} />
+          <Route path="/book/:id" element={<FullBooksWithId />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
+};
+
+const FullBooksWithId = () => {
+  const { id } = useParams(); 
+  return <FullBooks id={id}/>; 
 };
 
 root.render(

@@ -7,10 +7,15 @@ const Layout = () => {
     return (
         <>
             <Header />
-
+            
             <div id="content">
                 <section id="nav-bar">
                     <nav id="main-nav">
+                        <div id="toggle-nav">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                         <ul id="nav-items" className="columns hidden-small">
                             <li><Link to="/">HOME</Link></li>
                             <li><Link to="/topgenres">TOP GENRES</Link></li>

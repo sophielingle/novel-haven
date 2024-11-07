@@ -1,4 +1,5 @@
 import "../css/Contact.css";
+import ContactForm from "../components/ContactForm.js";
 
 const Contact = () => {
     return (
@@ -27,11 +28,12 @@ const Contact = () => {
                 </section>
 
                 <section className="info-section">
-                <h2>Contact Form</h2>
-                <hr />
-                <div className="columns">
-                    <p>A form and an iFrame go here.</p>
-                </div>
+                    <h2>Contact Form</h2>
+                    <hr />
+                    <div className="columns">
+                        <ContactForm>
+                        </ContactForm>
+                    </div>
                 </section>
             </div>
         </section>

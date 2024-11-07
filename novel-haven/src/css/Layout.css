@@ -1,4 +1,11 @@
 /* Navigation */
+#toggle-nav div {
+    width: 25px;
+    height: 2px;
+    background-color: var(--main-background-color);
+    margin: 6px 0;
+  }
+
 #nav-bar {
     background: var(--secondary-background);
     padding: 20px;
