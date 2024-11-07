@@ -9,6 +9,7 @@ const FullBooks = ({ id }) => {
         (async () => {
             try {
                 const response = await axios.get("https://novel-backend-6plv.onrender.com/api/books");
+                //const response = await axios.get("http://localhost:3001/api/books");
                 const matchingBook = response.data.find((book) => book.id == id);
                 setBook(matchingBook);
             } catch (error) {

@@ -9,6 +9,7 @@ const BestSellerBooks = () => {
     useEffect(() => {
         (async () => {
             const response = await axios.get("https://novel-backend-6plv.onrender.com/api/books");
+            //const response = await axios.get("http://localhost:3001/api/books");
             const bestSellers = response.data.filter((book) => book.bestSeller == "yes");
             setBooks(bestSellers);
         })();

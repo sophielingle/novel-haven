@@ -9,6 +9,7 @@ const BooksByGenre = ({ genre, sectionId }) => {
     useEffect(() => {
         (async () => {
             const response = await axios.get("https://novel-backend-6plv.onrender.com/api/books");
+            //const response = await axios.get("http://localhost:3001/api/books");
             const genreBooks = response.data.filter((book) => book.genre == genre);
             setBooks(genreBooks);
         })();
