@@ -93,6 +93,10 @@
         display: flex;
     }
 
+    #nav-items.open {
+        display: flex;
+    }
+
     #toggle-nav {
         display: none; 
     }
