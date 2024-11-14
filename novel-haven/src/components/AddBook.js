@@ -38,27 +38,27 @@ const AddBook = (props) => {
     <div id="add-dialog">
         <form id="add-book-form" onSubmit={addToServer}>
         <p>
-        <label htmlFor="id">ID Number:</label>
+        <label htmlFor="id">ID Number: </label>
         <input type="number" id="id" name="id" required value={inputs.id || ""} onChange={handleChange} />
         </p>
         <p>
-            <label htmlFor="title">Title:</label>
+            <label htmlFor="title">Title: </label>
             <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />
         </p>
         <p>
-            <label htmlFor="bestSeller">Best Seller ("yes" or "no"):</label>
+            <label htmlFor="bestSeller">Best Seller ("yes" or "no"): </label>
             <input type="text" id="bestSeller" name="bestSeller" required value={inputs.bestSeller || ""} onChange={handleChange}/>
         </p>
         <p>
-            <label htmlFor="author">Author:</label>
+            <label htmlFor="author">Author: </label>
             <input type="text" id="author" name="author" required value={inputs.author || ""} onChange={handleChange}/>
         </p>
         <p>
-            <label htmlFor="publication_year">Publication Year:</label>
+            <label htmlFor="publication_year">Publication Year: </label>
             <input type="text" id="publication_year" name="publication_year" required value={inputs.publication_year || ""} onChange={handleChange}/>
         </p>
         <p>
-            <label htmlFor="genre">Genre:</label>
+            <label htmlFor="genre">Genre: </label>
             <select name="genre" id="genre" required value={inputs.genre || ""} onChange={handleChange}>
                 <option value="Horror">Horror</option>
                 <option value="Drama">Drama</option>
@@ -67,19 +67,19 @@ const AddBook = (props) => {
             </select>
         </p>
         <p>
-            <label htmlFor="description">Brief Description:</label>
+            <label htmlFor="description">Brief Description: </label>
             <input type="text" id="description" name="description" required value={inputs.description || ""} onChange={handleChange}/>
         </p>
         <p>
-            <label htmlFor="extended_description">Full Description:</label>
+            <label htmlFor="extended_description">Full Description: </label>
             <input type="text" id="extended_description" name="extended_description" required value={inputs.extended_description || ""} onChange={handleChange}/>
         </p>
         <p>
-            <label htmlFor="price">Price (include "$"):</label>
+            <label htmlFor="price">Price (include "$"): </label>
             <input type="text" id="price" name="price" required value={inputs.price || ""} onChange={handleChange}/>
         </p>
         <p>
-            <label htmlFor="favorite_chapters1">Favorite Chapter Number:</label>
+            <label htmlFor="favorite_chapters1">Favorite Chapter Number: </label>
             <input type="text" id="favorite_chapters1" name="favorite_chapters1" required value={inputs.favorite_chapters1 || ""} onChange={handleChange}/>
         </p>
 
