@@ -1,4 +1,5 @@
 import "../css/Admin.css";
+import AddBook from "../components/AddBook.js";
 
 const Admin = () => {
     return (
@@ -7,10 +8,10 @@ const Admin = () => {
                 <h1>Add a Book to Our Database</h1>
                 <hr />
                 <h3>Please enter the information for the book you would like to add.</h3>
-                <p>A form goes here.</p>
+                <AddBook />
             </div>
             <p></p>
-            <div id="form-content" class="center-form">
+            <div id="form-content" className="center-form">
                 <h1>Delete a Book from the Database</h1>
                 <hr />
                 <h3>Please enter the information for the book you would like to remove.</h3>

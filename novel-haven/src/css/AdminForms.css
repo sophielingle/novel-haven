@@ -1,0 +1,21 @@
+#img-prev {
+    max-width: 100%;
+}
+
+form {
+    width: 600px;
+}
+  
+@media only screen and (min-width: 600px) {
+    #img-prev-section {
+        flex: 1;
+    }
+
+    #img-prev {
+        max-width: 100%;
+    }
+
+    #img-upload {
+        flex: 6;
+    }
+ }
