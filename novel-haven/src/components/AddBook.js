@@ -59,7 +59,12 @@ const AddBook = (props) => {
         </p>
         <p>
             <label htmlFor="genre">Genre:</label>
-            <input type="text" id="genre" name="genre" required value={inputs.genre || ""} onChange={handleChange}/>
+            <select name="genre" id="genre" required value={inputs.genre || ""} onChange={handleChange}>
+                <option value="Horror">Horror</option>
+                <option value="Drama">Drama</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Romance">Romance</option>
+            </select>
         </p>
         <p>
             <label htmlFor="description">Brief Description:</label>

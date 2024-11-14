@@ -27,7 +27,7 @@ const FullBooks = ({ id }) => {
                 alt={book.alt || "Book Cover"}
                 title={book.title}
                 author={book.author}
-                year={book.year}
+                publication_year={book.publication_year}
                 genre={book.genre}
                 extended_description={book.extended_description}
                 price={book.price}
