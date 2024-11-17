@@ -21,7 +21,17 @@ const AddBook = (props) => {
     event.preventDefault();
     setResult("Sending....");
 
+    const favoriteChapters = [
+        inputs.favorite_chapters1,
+        inputs.favorite_chapters2,
+        inputs.favorite_chapters3,
+    ];
+
     const formData = new FormData(event.target);
+    formData.set("favorite_chapters", JSON.stringify(favoriteChapters));
+    formData.delete("favorite_chapters1");
+    formData.delete("favorite_chapters2");
+    formData.delete("favorite_chapters3");
     console.log(...formData);
 
     const response = await fetch("https://novel-backend-6plv.onrender.com/api/books",{
@@ -38,16 +48,15 @@ const AddBook = (props) => {
     <div id="add-dialog">
         <form id="add-book-form" onSubmit={addToServer}>
         <p>
-        <label htmlFor="id">ID Number: </label>
-        <input type="number" id="id" name="id" required value={inputs.id || ""} onChange={handleChange} />
-        </p>
-        <p>
             <label htmlFor="title">Title: </label>
             <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />
         </p>
         <p>
-            <label htmlFor="bestSeller">Best Seller ("yes" or "no"): </label>
-            <input type="text" id="bestSeller" name="bestSeller" required value={inputs.bestSeller || ""} onChange={handleChange}/>
+            <label htmlFor="bestSeller">Best Seller: </label>
+            <select name="bestSeller" id="bestSeller" required value={inputs.bestSeller || ""} onChange={handleChange}>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
         </p>
         <p>
             <label htmlFor="author">Author: </label>
@@ -79,8 +88,16 @@ const AddBook = (props) => {
             <input type="text" id="price" name="price" required value={inputs.price || ""} onChange={handleChange}/>
         </p>
         <p>
-            <label htmlFor="favorite_chapters1">Favorite Chapter Number: </label>
-            <input type="text" id="favorite_chapters1" name="favorite_chapters1" required value={inputs.favorite_chapters1 || ""} onChange={handleChange}/>
+            <label htmlFor="favorite_chapters1">Favorite Chapter: </label>
+            <input type="text" id="favorite_chapters1" name="favorite_chapters1" required value={inputs.favorite_chapters1 || ""} onChange={handleChange} />
+        </p>
+        <p>
+            <label htmlFor="favorite_chapters2">Second Favorite Chapter: </label>
+            <input type="text" id="favorite_chapters2" name="favorite_chapters2" required value={inputs.favorite_chapters2 || ""} onChange={handleChange} />
+        </p>
+        <p>
+            <label htmlFor="favorite_chapters3">Third Favorite Chapter: </label>
+            <input type="text" id="favorite_chapters3" name="favorite_chapters3" required value={inputs.favorite_chapters3 || ""} onChange={handleChange} />
         </p>
 
 
