@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import FullBook from "./FullBook";  
 
-const FullBooks = ({ id }) => {
+const FullBooks = ({ _id }) => {
     const [book, setBook] = useState(null);
 
     useEffect(() => {
@@ -10,13 +10,13 @@ const FullBooks = ({ id }) => {
             try {
                 const response = await axios.get("https://novel-backend-6plv.onrender.com/api/books");
                 //const response = await axios.get("http://localhost:3001/api/books");
-                const matchingBook = response.data.find((book) => book.id == id);
+                const matchingBook = response.data.find((book) => book._id == _id);
                 setBook(matchingBook);
             } catch (error) {
                 console.error("Error fetching book data:", error);
             }
         })();
-    }, [id]);
+    }, [_id]);
 
     if (!book) return (null); 
 

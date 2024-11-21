@@ -32,7 +32,7 @@ const App = () => {
           <Route path="/mystery" element={<Mystery />} />
           <Route path="/drama" element={<Drama />} />
           <Route path="/romance" element={<Romance />} />
-          <Route path="/book/:id" element={<FullBooksWithId />} />
+          <Route path="/book/:_id" element={<FullBooksWithId />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -40,8 +40,8 @@ const App = () => {
 };
 
 const FullBooksWithId = () => {
-  const { id } = useParams(); 
-  return <FullBooks id={id}/>; 
+  const { _id } = useParams(); 
+  return <FullBooks _id={_id}/>; 
 };
 
 root.render(

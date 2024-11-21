@@ -10,7 +10,7 @@ const BooksByGenre = ({ genre, sectionId }) => {
         (async () => {
             const response = await axios.get("https://novel-backend-6plv.onrender.com/api/books");
             //const response = await axios.get("http://localhost:3001/api/books");
-            const genreBooks = response.data.filter((book) => book.genre == genre);
+            const genreBooks = response.data.filter((book) => book.genre === genre);
             setBooks(genreBooks);
         })();
     }, [genre]);
@@ -19,7 +19,7 @@ const BooksByGenre = ({ genre, sectionId }) => {
         <section id={sectionId}>
             {books.map((book) => (
                 <PartialBook
-                    id={book.id}
+                    _id={book._id}
                     image={book.image}
                     alt={book.alt || "Book Cover"}
                     title={book.title}
