@@ -12,7 +12,6 @@ const EditBook = (props) => {
       description: props.description,
       extended_description: props.extended_description,
       price: props.price,
-      favorite_chapters: props.favorite_chapters
   });
   const [result, setResult] = useState("");
 
@@ -32,14 +31,8 @@ const EditBook = (props) => {
     event.preventDefault();
     setResult("Sending....");
 
-    const favoriteChapters = [
-        inputs.favorite_chapters1,
-        inputs.favorite_chapters2,
-        inputs.favorite_chapters3,
-    ];
-
     const formData = new FormData(event.target);
-    formData.set("favorite_chapters", JSON.stringify(favoriteChapters));
+    formData.delete("favorite_chapters");
     formData.delete("favorite_chapters1");
     formData.delete("favorite_chapters2");
     formData.delete("favorite_chapters3");
@@ -114,19 +107,6 @@ const EditBook = (props) => {
             <label htmlFor="price">Price (include "$"): </label>
             <input type="text" id="price" name="price" required value={inputs.price || ""} onChange={handleChange}/>
         </p>
-        <p>
-            <label htmlFor="favorite_chapters1">Favorite Chapter: </label>
-            <input type="text" id="favorite_chapters1" name="favorite_chapters1" required value={inputs.favorite_chapters1 || ""} onChange={handleChange} />
-        </p>
-        <p>
-            <label htmlFor="favorite_chapters2">Second Favorite Chapter: </label>
-            <input type="text" id="favorite_chapters2" name="favorite_chapters2" required value={inputs.favorite_chapters2 || ""} onChange={handleChange} />
-        </p>
-        <p>
-            <label htmlFor="favorite_chapters3">Third Favorite Chapter: </label>
-            <input type="text" id="favorite_chapters3" name="favorite_chapters3" required value={inputs.favorite_chapters3 || ""} onChange={handleChange} />
-        </p>
-
 
         <section className="columns">
             <p id="img-prev-section">
