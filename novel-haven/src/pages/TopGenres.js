@@ -23,7 +23,7 @@ const TopGenres = () => {
                             image="images/drama.jpg" 
                             alt="Drama Genre" 
                             title="Drama" 
-                            description="The drama genre can include anything between thriller and slice-of-life. Whether it's in a situation where the characters are fighting to survive or just trying to get through the work day, there is drama around the protagonist."> 
+                            description="The drama genre can include anything between thriller and slice-of-life. Whether it's in a situation where the characters are fighting to survive or trying to get through the day, there is drama around the protagonist."> 
                             </Genre>
                         </Link>
                     </section>

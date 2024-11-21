@@ -11,7 +11,7 @@ const FullBook = (book) => {
                     <div className="info four">
                         <h2>Title: {book.title}</h2>
                         <h3>Author: {book.author}</h3>
-                        <p>Publication Year: {book.year}</p>
+                        <p>Publication Year: {book.publication_year}</p>
                         <p>Genre: {book.genre}</p>
                     </div>
                 </section>

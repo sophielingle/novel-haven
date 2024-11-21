@@ -11,12 +11,6 @@ const Admin = () => {
                 <AddBook />
             </div>
             <p></p>
-            <div id="form-content" className="center-form">
-                <h1>Delete a Book from the Database</h1>
-                <hr />
-                <h3>Please enter the information for the book you would like to remove.</h3>
-                <p>A form goes here.</p>
-            </div>
         </section>
     );
 };
